@@ -35,11 +35,20 @@ int main()
     cout << "Add the following two numbers: " << endl;
     cout << num1 << " + " << num2 << endl;
 
-    cout << "Press any key to see the answer..." << endl;
-    cin.get();
+    int studentAnswer;
+    cout << "Enter your answer: ";
+    cin >> studentAnswer;
 
     int correctAnswer = num1 + num2;
+
     cout << "The correct answer is: " << correctAnswer << endl;
+
+    if (studentAnswer == correctAnswer) {
+        cout << "You are correct!" << endl;
+    }
+    else {
+        cout << "Your answer is not correct." << endl;
+    }
 
 
     return 0;
